@@ -1,0 +1,95 @@
+header, nav, footer{
+    display: flex;
+    border: none;
+    background-color: rgba(119, 113, 113, 0.877);
+    align-items: centre;
+    justify-content: space-around;
+    height: auto;
+    max-width: 990px;
+    min-width: 480px;
+    flex-direction: row;
+    padding: 15px;
+    margin: 0px auto;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  a {
+    background-color: rgba(0, 0, 0, 0.514);
+    text-decoration: none !important;
+    margin: 0px auto;
+    display: inline-block;
+    flex-direction: row;
+    width: 150px;
+    height: 40px;
+    color:ghostwhite;
+    text-align: center;
+    line-height: 2.5;
+    vertical-align: middle;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+
+  #name{
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  #email{
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  #comment{
+    display: block;
+    height: 100px;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  section{
+    display: flex;
+    border: none;
+    align-items: centre;
+    justify-content: space-around;
+    height: auto;
+    max-width: 990px;
+    min-width: 480px;
+    flex-direction: row;
+    padding: 15px;
+    margin: 0px auto;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(187, 190, 192);
+  }
+
+  @media screen and (max-width: 958px){
+    nav { 
+      display: block;
+      flex-direction: column; /*Stacks the navigtion menue into a column*/
+      height: auto; /* Automaticaly adjusts the containers height to surround the items*/ 
+    
+    }
+    
+    a{
+      width: 100%;
+    }
+      
+    }
+      
+      
+      
+    
+
+
+
+  @media screen and (max-width: 480px){
+ 
+    nav{
+      display: flex;
+      flex-direction: column; /*Stacks the navigtion menue into a column*/
+      height: auto; /* Automaticaly adjusts the containers height to surround the items*/
+    }
+    
+    div{
+      width: 100%;
+    }
+}

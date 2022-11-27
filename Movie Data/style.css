@@ -1,0 +1,132 @@
+body{
+    background-image: url(images/moviebackground.jpg);
+    background-size: cover;
+  }
+
+
+
+
+header, nav, footer{
+    display: flex;
+    border: none;
+    background-color: rgba(119, 113, 113, 0.877);
+    align-items: centre;
+    justify-content: space-around;
+    height: auto;
+    max-width: 990px;
+    min-width: 480px;
+    flex-direction: row;
+    padding: 15px;
+    margin: 0px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+   a {
+    background-color: rgba(0, 0, 0, 0.514);
+    text-decoration: none !important;
+    margin: 0px auto;
+    display: inline-block;
+    flex-direction: row;
+    width: 150px;
+    height: 40px;
+    color:ghostwhite;
+    text-align: center;
+    line-height: 2.5;
+    vertical-align: middle;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+
+  .container{
+    border: none;
+    max-width: 990px;
+    min-width: 480px;
+    margin: 0px auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 15px;
+    background-color: rgba(255, 248, 220, 0.781);
+  }
+  
+  .input_box{
+    border: none;
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    margin: 10px;
+    padding: 3px;
+    background-color: rgba(240, 255, 255, 0.685);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .table{
+    border: none;
+    width: 950px;
+    height: auto;
+    display: inline-block;
+    margin: 10px;
+    background-color: rgba(250, 235, 215, 0.726);
+  }
+  
+  label{
+      display: block;
+      clear: left;
+      width: 260px;
+      text-align: left;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  input, textarea {
+    display: block;
+    float: right;
+    width: 170px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  fieldset{
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: none;
+    border: 3px solid grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  th, td, tr{
+    border: 1px solid;
+    justify-content: space-evenly;
+    text-align: left;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+
+
+
+
+
+
+  
+  @media screen and (max-width: 480px){
+   
+    nav{
+      display: flex;
+      flex-direction: column; /*Stacks the navigtion menue into a column*/
+      height: auto; /* Automaticaly adjusts the containers height to surround the items*/
+    }
+    
+    div{
+      width: 100%;
+    }
+}

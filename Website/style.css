@@ -1,0 +1,241 @@
+body{
+  background-image: url(images/background.jpg);
+  background-size: cover;
+}
+
+
+
+
+
+
+header, nav, footer{
+  display: flex;
+  border: none;
+  background-color: rgba(119, 113, 113, 0.877);
+  align-items: centre;
+  justify-content: space-around;
+  height: auto;
+  max-width: 990px;
+  min-width: 480px;
+  flex-direction: row;
+  padding: 15px;
+  margin: 0px auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ a {
+  background-color: rgba(0, 0, 0, 0.514);
+  text-decoration: none !important;
+  margin: 0px auto;
+  display: inline-block;
+  flex-direction: row;
+  width: 150px;
+  height: 40px;
+  color:ghostwhite;
+  text-align: center;
+  line-height: 2.5;
+  vertical-align: middle;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  
+}
+
+#aboutMe, #joining_the_course{
+  border: none;
+  max-width: 990px;
+  min-width: 480px;
+  height: auto;
+  padding: 15px;
+  margin: 0px auto;
+  overflow: hidden;
+  background-color: rgba(187, 187, 187, 0.774);
+}
+
+#profile{ /* When the viewport size narrows to 480px the picture should chnage to a landscape view across the container 
+  with the article underneath*/
+  height: 220px;
+  width: 180px;
+  padding-right: 9px;
+  float: left;
+ 
+  display: inline-block;
+}
+
+#profile img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ #holidays{
+  height: 200px;
+  width: 350px;
+  padding-left: 9px;
+  float: right;
+  margin: 2px;
+  display: inline-block;
+}
+
+
+#holidays img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+p, h2, h3 {
+  text-align: justify;
+  margin-left: 0px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+/* makes the window central within its container */
+.window {
+  display:flex;
+  justify-content: center;
+  margin: 0px auto;
+  position: relative;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.sliderDots{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+.buttons{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  vertical-align: auto;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .pause:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.mySlides{
+  
+  width: 640px;
+  height: auto;
+}
+
+.mySlides img{
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: auto;
+}
+
+@media screen and (max-width: 597px){
+   .mySlides img{
+    max-width: 100%;
+  }
+  
+}
+
+
+
+
+@media screen and (max-width: 958px){
+nav { 
+  display: block;
+  flex-direction: column; /*Stacks the navigtion menue into a column*/
+  height: auto; /* Automaticaly adjusts the containers height to surround the items*/ 
+
+}
+
+a{
+  width: 100%;
+}
+  
+}
+
+@media screen and (max-width: 480px){
+ 
+  nav{
+    display: flex;
+    flex-direction: column; /*Stacks the navigtion menue into a column*/
+    height: auto; /* Automaticaly adjusts the containers height to surround the items*/
+  }
+  
+  div{
+    width: 100%;
+  }
+  
+  #profile{
+    height: 290px;
+    width: 99%;
+    margin: 0px auto;
+    float: flex;
+    padding: 2px;
+  }
+
+  
+  
+  #holidays{
+    height: 190px;
+    width: 99%;
+    margin: 0px auto;
+    float: flex;
+    padding: 2px;
+  }
+  
+  .mySlides img{
+    max-width: 100%;
+  }
+  
+  
+  
+}
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comment Form</title>
+    <link rel="stylesheet" href="style_commentForm_Project.css">
+    <script src="script_commentForm_Project.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!-- Header of the page -->
+
+  <body>
+    <main>
+      <form>
+        <label for="name">
+          Name
+        </label>
+          <input id="name"
+                 name="name"
+                 type="text">
+          </input>
+        <label for="email">
+          Email
+        </label>
+          <input id="email"
+                 name="email_address"
+                 type="email">
+        <label for="comment">
+          Comment
+        </label>
+          <textarea id="comment"
+                 name="comment_box"
+                    type="comment"></textarea>
+      <span id="commentSize">0/140</span>
+      </br>
+          <button id="submit">submit</button>
+      </form>
+      <span id="commentOutput"></span>
+</main>
+</body>
+<footer>
+  
+</footer>
+</html>

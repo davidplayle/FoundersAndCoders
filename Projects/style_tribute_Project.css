@@ -1,0 +1,222 @@
+body{
+  background-image: url(images/background_tribute.jpg);
+  background-size: cover;
+}
+
+
+header, nav, footer{
+  display: flex;
+  border: none;
+  background-color: rgba(119, 113, 113, 0.877);
+  align-items: centre;
+  justify-content: space-around;
+  height: auto;
+  max-width: 990px;
+  min-width: 480px;
+  flex-direction: row;
+  padding: 15px;
+  margin: 0px auto;
+  text-align: justify;
+}
+
+
+header{
+  background-color: rgba(10, 35, 104, 0.966);
+  color: gold;
+}
+
+
+ a {
+  background-color: rgba(0, 0, 0, 0.514);
+  text-decoration: none !important;
+  margin: 0px auto;
+  display: inline-block;
+  flex-direction: row;
+  width: 150px;
+  height: 40px;
+  color:ghostwhite;
+  text-align: center;
+  line-height: 2.5;
+  vertical-align: middle;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+.intro_lords, .the_mcc, .mcc_members{
+  display:block;
+  border: none;
+  height: auto;
+  max-width: 990px;
+  min-width: 480px;
+  margin: 0px auto;
+  padding: 15px;
+  overflow:hidden;
+  background-color: rgba(240, 248, 255, 0.555);
+}
+
+
+.mcc_members{
+  background-image: url(images/streaks-red-yellow-stripes-lines-1920x1080-c2-d8d334-d84934-l2-80-113-a-45-f-1.png);
+  background-size: auto;
+}
+
+#thomas{
+  border: none;
+  height: 300px;
+  width: auto;
+  float: left;
+  margin-right: 5px;
+}
+
+#thomas, pciture, img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+section{
+  display:block;
+  border: none;
+  height: auto;
+  max-width: 990px;
+  min-width: 480px;
+  margin: 0px auto;
+  padding: 15px;
+  background-color: rgba(240, 248, 255, 0.603);
+}
+
+.flex-container{
+  width: 100%;
+  height: auto;
+  border: none;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: centre;
+  margin: 3px auto;
+  max-width: 960px;
+  /* Use row to display as row*/
+  /* Use column to display as column*/
+}
+
+.flex-box{
+  width: 300px;
+  height: 200px;
+  background: lightgrey;
+  align-content: space-between;
+  padding: 0px;
+  font-size: 14.5px;
+  margin: 8px auto;
+  flex-direction: row;
+  
+}
+
+p, h2, h1{
+  margin-left: 2px;
+  padding: 9px;
+  text-align: justify;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#mcc_link{
+  width: auto;
+  background: none;
+  text-decoration-line: underline;
+  color:rgba(10, 35, 104, 0.671)
+}
+
+@media screen and (max-width: 998px){
+  section{
+    max-width: 935px;
+  }
+  
+  .flex-container{
+  width: 70%;
+  height: auto;
+  border: none;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: centre;
+  margin: 3px auto;
+  max-width: 960px;
+  } 
+  
+  
+  .flex-box{
+    width: 300;
+    height: auto;
+    margin: 8px auto;
+    
+    
+  }
+  
+  
+  @media screen and (max-width: 958px){
+nav { 
+  display: block;
+  flex-direction: column; /*Stacks the navigtion menue into a column*/
+  height: auto; /* Automaticaly adjusts the containers height to surround the items*/ 
+
+}
+
+a{
+  width: 100%;
+}
+  
+}
+  
+  
+  
+}
+
+@media screen and (max-width: 480px){
+  section{
+    display: flow-root;
+  }
+  
+  .flex-container{
+  width: 100%;
+  height: auto;
+  border: none;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: centre;
+  margin: 3px auto;
+  max-width: 960px;
+  display: flow-root;
+  
+  } 
+  
+  
+  .flex-box{
+    margin: 8px auto;
+   
+    
+  }
+  
+  
+  nav{
+    display: flex;
+    flex-direction: column; /*Stacks the navigtion menue into a column*/
+    height: auto; /* Automaticaly adjusts the containers height to surround the items*/
+  }
+  
+  div{
+    width: 100%;
+  }
+  
+  #thomas{
+    border: none;
+    height: 290px;
+    width: auto%;
+    margin-left: 42px;
+    float: flex;
+    padding-left: 9px;
+  }
+  
+  #plaque source{
+    max-width: 100%;
+  }
+  
+}
